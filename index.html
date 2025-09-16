@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadre Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed-header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1 id="page-title">Cadre Analysis Dashboard</h1>
+            </div>
+            <div class="header-actions">
+                <button class="nav-toggle-button" id="navToggleButton">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="nav-dropdown" id="navDropdown">
+                    <ul>
+                        <li><a href="#" onclick="showPage('home')">🏠 Home</a></li>
+                        <li><a href="#" onclick="showPage('grouping')">📦 Grouping Distribution</a></li>
+                        <li><a href="#" onclick="showPage('functional')">📊 Functional Distribution</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="home-page" class="page-content active">
+        <div class="main-container fade-in">
+            <div class="left-sidebar" id="leftSidebar">
+                <div class="sidebar-header">
+                    <h2>Project Overview</h2>
+                    <p class="subtitle">Public Service Recruitment Reform in Maharashtra</p>
+                </div>
+                <div class="sidebar-content">
+                    <div class="about-content">
+                        <p>This project proposes a major reform of Maharashtra’s recruitment framework, covering 2,500 cadres across 33 departments. The current system is fragmented, with over 2000+ separate exams and inconsistent, outdated rules for identical posts.</p>
+                        <h3>Our solution introduces a cadre bucketing framework to group similar roles and standardize requirements. The approach focuses on:</h3>
+                        <ul>
+                            <li><strong></strong>Uniform rules for identical cadres across departments.</li>
+                            <li><strong></strong>Uniform rules for identical cadres across departments.</li>
+                            <li><strong></strong>Digitization of all rules in a single repository.</li>
+<p>By consolidating thousands of exams into a few qualification-based tests, the initiative will deliver a transparent, efficient system that reduces administrative burden and ensures fair, merit-based selection.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <h2 style="font-size: 2.5rem; font-weight: 800; background: var(--secondary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 2rem; text-align: center;">Project Familiarisation</h2>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                        <img src="images/Dept PPT_pages-to-jpg-0001.jpg" alt="Centralized Data Visualization" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Resource Structure</h3>
+                        <p>The pyramid illustrates the distribution of these cadres across hierarchical groups, with Group C forming the largest base.</p>
+                    </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0002.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Exam Schemes</h3>
+                        <p>This complexity results in a multitude of exams, with over 2500 different recruitment tests being conducted for various cadres.</p>
+                   </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0003.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Indentified Issues</h3>
+                        <p>Critical flaws identified in the existing recruitment rules that compromise the quality and fairness of hiring.</p>
+                     </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0004.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Case Study - Inconsistent Educational Qualifications</h3>
+                        <p>case study demonstrates how the same cadre, 'Librarian', with an identical pay scale has vastly different educational requirements across two departments. One department requires a Post Graduate degree, while another only requires a Diploma in Library Science.</p>
+                     </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0005.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Case Study - Inconsistent Experience Requirements</h3>
+                        <p>Similar cadres with the same pay scale and educational qualifications can have different experience requirements. For instance, a Chemist role requires a minimum of 3 years of experience, while a Drug Inspector in the same pay bracket requires none.</p>
+                     </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0006.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Case Study - Inconsistent Skill Requirements</h3>
+                        <p>Inconsistencies in required skills for the exact same post and pay scale across different departments. The 'Junior Clerk' position in the Public Health department requires specific typing and computer skills, whereas the same role in Medical Education has no such requirement.</p>
+                      </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0007.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Case Study - Irrelevant Physical Qualifications</h3>
+                        <p>This case study points out the issue of irrelevant qualifications by showing how a 'Junior Overseer', an administrative cadre post, has mandatory physical requirements. The role illogically requires applicants to meet specific height and chest measurements.</p>
+                     </div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0008.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3></h3>
+                        <p></p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0009.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Illegible Physical Records</h3>
+                        <p>The reliance on poorly maintained and often illegible physical copies of recruitment rules. This makes it extremely difficult to accurately access, interpret, and digitize the governing criteria for cadres</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0010.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Preferences in Eligibility</h3>
+                        <p>Subjective clauses, such as preferring candidates with post-graduate degrees or published papers, complicate the selection process and can lead to inconsistencies.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0011.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Restrictive Institute Recognition</h3>
+                        <p>Recruitment rules recognize qualifications from only one specific institute, limiting the pool of eligible candidates.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0012.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Solution: Three Proposals for RR Revamp</h3>
+                        <p> The proposed strategy involves ensuring uniformity for the same cadres, standardizing all RRs using a model template, and digitizing them into a single, accessible repository.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0013.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3></h3>
+                        <p></p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0014.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Cadre Bucketing - First Level</h3>
+                        <p>The strategic framework of "bucketing" to streamline and rationalize the ~2500 cadres. The first level of this framework involves a broad functional classification of all cadres into three primary categories: Administrative, Technical, and Developmental.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0015.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Cadre Bucketing - Administrative Domain</h3>
+                        <p>Bucketing for Administrative cadres, breaking them down into more specific domains. These sub-categories include General, Legal, Finance, Law Enforcement, and Other Admin to better group similar roles.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0016.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Cadre Bucketing - Technical Domain</h3>
+                        <p>Bucketing for Technical cadres, organizing them based on their area of expertise. The primary sub-groups include Engineering, Health, Sciences, and Mathematics/Statistical, among others.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0017.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Cadre Bucketing - Developmental Domain</h3>
+                        <p>Bucketing for Developmental cadres, which are grouped based on their functional roles in societal development. The key domains identified are Education and Social Welfare, with a third category for other developmental roles.</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0018.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Guiding Principles for Bucketing</h3>
+                        <p>The four principal lenses, or criteria, that guide the cadre bucketing and recruitment rule analysis. The approach focuses on re-evaluating the relevance and verifiability of requirements related to Education, Experience, Skills, and Physical Qualifications</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Screenshot 2025-09-16 095531.png" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Proposed Exam Scheme for Group A and B (Gazetted)</h3>
+                        <p>A proposal to consolidate recruitment for Group A and B (Gazetted) posts into two primary examination schemes. The approach suggests combining exams based on educational criteria, such as a unified Maharashtra Civil Service exam and a separate stream-based CBT for senior officer levels.
+
+
+
+</p>
+</div>
+                </div>
+                <div class="highlight-section fade-in">
+                    <div class="image-container">
+                         <img src="images/Dept PPT_pages-to-jpg-0020.jpg" alt="Dynamic Filtering" class="highlight-image">
+                    </div>
+                    <div class="content-body">
+                        <h3>Proposed Exam Scheme for Group B (Non-Gazetted) and C</h3>
+                        <p>A proposal of simplified two-exam scheme for all Group B (Non-Gazetted) and Group C recruitment. The model suggests a Combined Non-Gazetted exam for graduates/diploma holders and a single Maharashtra Staff Selection exam for HSC/SSC qualified candidates, with no interviews for these posts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="grouping-page" class="page-content">
+        <div class="main-container fade-in">
+            <div id="error-container-grouping" class="error-container"></div>
+            <div class="filter-section">
+                <div class="filter-card">
+                    <h3>Department</h3>
+                    <select id="department-select-grouping" class="filter-input" onchange="onFilterChange()">
+                        <option value="">Select department...</option>
+                    </select>
+                </div>
+                <div class="filter-card">
+                    <h3>Establishment</h3>
+                    <select id="establishment-select-grouping" class="filter-input" onchange="onFilterChange()">
+                        <option value="">Select department first</option>
+                    </select>
+                </div>
+                <div class="total-card">
+                    <div class="title">Total Cadres</div>
+                    <div class="value" id="total-cadres-grouping">0</div>
+                </div>
+            </div>
+            <h2 class="section-title">Grouping Distribution</h2>
+            <div class="distribution-grid">
+                <div class="metric-card group-a"><div class="title">Category A</div><div class="value" id="category-a-grouping">0</div></div>
+                <div class="metric-card group-b"><div class="title">Category B</div><div class="value" id="category-b-grouping">0</div></div>
+                <div class="metric-card group-b-ng"><div class="title">Category B (N/G)</div><div class="value" id="category-b-ng-grouping">0</div></div>
+                <div class="metric-card group-c"><div class="title">Category C</div><div class="value" id="category-c-grouping">0</div></div>
+            </div>
+            <h2 class="section-title">Functional Distribution</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div id="bar-admin" class="progress-bar-segment"><span class="segment-label">Administration</span><span class="segment-value" id="admin-value">0</span></div>
+                    <div id="bar-tech" class="progress-bar-segment"><span class="segment-label">Technical</span><span class="segment-value" id="tech-value">0</span></div>
+                    <div id="bar-dev" class="progress-bar-segment"><span class="segment-label">Development</span><span class="segment-value" id="dev-value">0</span></div>
+                </div>
+            </div>
+            <div class="table-container">
+                <div class="table-header"><h3>Proposed Bucketing Details</h3></div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Department</th><th>Establishment</th><th>Cadre Name</th><th>Pay Scale</th>
+                                <th>Broad Function</th><th>Domain Specific</th><th>Proposed Category</th>
+                            </tr>
+                        </thead>
+                        <tbody id="details-table-body-grouping">
+                            <tr><td colspan="7" class="no-data">Select a department to view data</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="functional-page" class="page-content">
+        <div class="main-container fade-in">
+            <div id="error-container-functional" class="error-container"></div>
+            <div class="filter-section">
+                <div class="filter-card">
+                    <h3>Department</h3>
+                    <select id="department-select-functional" class="filter-input" onchange="onFilterChange()">
+                        <option value="">Select department...</option>
+                    </select>
+                </div>
+                <div class="filter-card">
+                    <h3>Establishment</h3>
+                    <select id="establishment-select-functional" class="filter-input" onchange="onFilterChange()">
+                        <option value="">Select department first</option>
+                    </select>
+                </div>
+                <div class="total-card">
+                    <div class="title">Total Cadres</div>
+                    <div class="value" id="total-cadres-functional">0</div>
+                </div>
+            </div>
+            <h2 class="section-title">Grouping Distribution</h2>
+            <div class="distribution-grid">
+                <div class="metric-card group-a"><div class="title">Group A</div><div class="value" id="category-a-functional">0</div></div>
+                <div class="metric-card group-b"><div class="title">Group B</div><div class="value" id="category-b-functional">0</div></div>
+                <div class="metric-card group-b-ng"><div class="title">Group B (N/G)</div><div class="value" id="category-b-ng-functional">0</div></div>
+                <div class="metric-card group-c"><div class="title">Group C</div><div class="value" id="category-c-functional">0</div></div>
+            </div>
+            <h2 class="section-title">RR Revision Status Summary</h2>
+            <div class="two-column-grid">
+                <div class="metric-card no-rr-change"><div class="title">No Recruitment Rule Change</div><div class="value" id="no-rr-count-functional">0</div></div>
+                <div class="metric-card rr-change"><div class="title">Recruitment Rule Change</div><div class="value" id="with-rr-count-functional">0</div></div>
+            </div>
+            <div class="table-container">
+                <div class="table-header"><h3>Recruitment Rules Details</h3></div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Department</th><th>Establishment</th><th>Cadre Name</th><th>Group</th><th>Pay Scale</th>
+                                <th>Education</th><th>Experience</th><th>Remark</th><th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="details-table-body-functional">
+                             <tr><td colspan="9" class="no-data">Select a department to view data</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
